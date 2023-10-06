@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    background-color: hsl(218, 28%, 13%);
+}
+section{
+    margin: 0;
+}
+/* header section */
+header{
+    background-color: hsl(217, 28%, 15%);
+}
+header nav{
+    padding: 30px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+}
+nav .logo img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: hsla(0, 0%, 100%, 0.63);
+}
+ul li:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
+}
+/* header main */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Raleway;
+    background-image: url('images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 0 101%;
+    background-size: 100% 48%;
+}
+main .image{
+    Max-width: 550px;
+}
+main .image img{
+    width: 100%;
+}
+main .files{
+    max-width: 45%;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+main .fylo{
+    margin-top: 1.5%;
+    margin-bottom: 30px;
+    max-width: 35%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 23px;
+}
+main button{
+    margin-bottom: 17%;
+    padding: 10px 60px;
+    border-radius: 20px;
+    border: 0;
+    background-color: hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(176, 68%, 64%);
+}
+/* section-firstsection */
+.firstsection{
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.firstsection .cover{
+    background-color: hsl(218, 28%, 13%);
+    margin-bottom: 8%;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-family: Open Sans;
+}
+.cover .block{
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.block .icons{
+    width: 50px;
+    height: 53px;
+}
+.icons img{
+    width: 100%;
+    height: 100%;
+}
+.icons:nth-child(4){
+    width: 58px;
+}
+.cover h5{
+    margin: 0;
+}
+.cover p{
+    margin-top: 0;
+    font-size: 0.83rem;
+}
+/* second-section */
+.secondsection{
+    background-color: hsl(218, 28%, 13%);
+    padding: 0% 7% 5%;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 50px;
+    font-family: Raleway;
+}
+.secondsection .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.content h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.content p, .content h5{
+    margin: 0;
+}
+.content h5{
+    align-self: flex-start;
+    display: flex;
+    gap: 7px;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+.content h5:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+}
+.content h5 img{
+    color: hsl(0, 0%, 100%);
+}
+/* third section */
+.thirdsection{
+    background-color: hsl(218, 28%, 13%);
+    padding: 8%;
+    font-family: Raleway;
+}
+.thirdsection .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20%;
+}
+.wrapper > div{
+    flex: 0 1 300px;
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* z-index: 1; */
+}
+.blockss img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.blockss h5, .blockss h6{
+    margin: 0;
+}
+.blockss .profile{
+    display: flex;
+    gap: 10px;
+}
+.profile .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blockss h6{
+    font-size: 0.5rem;
+    color: hsla(0, 0%, 100%, 0.548);
+}
+.blockss p{
+    line-height: 22px;
+    font-size: .9rem;
+}
+.wrapper .c{
+    position: relative;
+}
+.wrapper .block1{
+    z-index: 99;
+}
+.quote{
+    z-index: -1;
+    position: absolute;
+    top: -12%;
+    left: -1%;
+}
+.quote img{
+    border-radius: 0;
+}
+/* footer */
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .signup{
+    max-width: 45%;
+    margin-top: -10%;
+    padding: 5% 5%;
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: Raleway;
+}
+.signup h1{
+    margin: 0;
+    font-size: 2rem;
+}
+.signup p{
+    margin: 0;
+    font-size: 0.7rem;
+}
+.signup .input{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.input input{
+    flex: 2 1 230px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0;
+}
+.input input[type="email"]:focus {
+    outline: none;
+  }
+.input button{
+    flex: 1 1 140px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    background-color: hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+.input button:hover{
+    cursor: pointer;
+    background-color: hsl(176, 68%, 64%);
+}
+.signup #error{
+    align-self: flex-start;
+    margin: 0;
+}
+/* logo */
+.logo1{
+    align-self: flex-start;
+    width: 130px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.logo1 img{
+    width: 100%;
+}
+/* foot */
+.foot{
+    margin: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: hsla(0, 0%, 100%, 0.774);
+    font-family: Raleway;
+}
+.foot p{
+    /* margin-top: 15%; */
+    flex: 0 1 250px;
+    margin: 0;
+    text-align: start;
+    display: flex;
+}
+p img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.foot .phone{
+    flex: 0 1 200px;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.phone a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.phone img{
+    width: 15px;
+    margin-right: 15px;
+}
+.foot .about{
+    flex: 0 1 150px;
+}
+.about{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about li{
+    margin-bottom: 10px;
+}
+.about li:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.foot .contact{
+    flex: 0 1 150px;
+}
+.contact{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.contact li{
+    margin-bottom: 10px;
+}
+.contact li:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.foot .social{
+    flex: 0 1 150px;
+    display: flex;
+    gap: 10px;
+}
+.social div{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social div:hover{
+    cursor: pointer;
+    border-color: hsl(176, 68%, 64%);
+}
+.social div:hover i{
+    cursor: pointer;
+    color: hsl(176, 68%, 64%);
+}
+/* media query */
+@media all and (max-width:1100px) {
+    main .files{
+        max-width: 65%;
+    }
+    main .fylo{
+        max-width: 60%;
+    }
+    .firstsection{
+        padding-top: 20px;
+    }
+    .firstsection .cover{
+        max-width: 80%;
+    }
+    .secondsection{
+        flex-direction: column;
+        padding: 5% 7%;
+    }
+    .secondsection .illustrator{
+        align-self: center;
+    }
+    footer .signup{
+        margin-top: -20%;
+    }
+    .signup h1{
+        font-size: clamp(1.2rem,3vw,1.8rem);
+    }
+}
+@media all and (max-width:830px) {
+    .firstsection .cover{
+        max-width: 100%;
+        padding: 40px;
+    }
+    .secondsection .content h1{
+        font-size: clamp(1.2rem,5vw,3rem);
+    }
+    .thirdsection .wrapper{
+        justify-content: center;
+        margin-top: 20%;
+    }
+}
+@media all and (max-width:670px) {
+    main .files{
+        max-width: 100%;
+        padding: 0 20px;
+        font-size: clamp(1.5rem,5vw,2rem);
+    }
+    main .fylo{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .firstsection .cover{
+        justify-content: center;
+    }
+    .secondsection .illustrator img{
+        width: 100%;
+    }
+    footer .signup{
+        max-width: 80%;
+    }
+    footer .logo1{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+@media all and (max-width:450px) {
+    header nav{
+        padding: 30px 15px;
+    }
+    nav ul li{
+        font-size: clamp(.8rem,2vw,1rem);
+    }
+    header main{
+        background-image: url('images/bg-curvy-mobile.svg');
+        /* background-position: 100% 100%; */
+        background-size: 100% 60%;
+    }
+    main .image{
+        padding: 20px;
+    }
+    .thirdsection .wrapper{
+        margin-bottom: 40%;
+    }
+    footer .signup{
+        margin-top: -35%;
+    }
+    .foot{
+        margin-top: 20px;
+        gap: 50px;
+        /* justify-content: center; */
+    }
+    .foot .social{
+        justify-self: center;
+    }
+}
